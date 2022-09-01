@@ -1,0 +1,51 @@
+{% load static %}
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+   </head>
+    <body>
+        <div class="main_tab">
+            <div class="logo">
+                <P>Logo</P>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>O mnie</li>
+                    <li>Doświadczenie zawodowe</li>
+                    <li>Technologie</li>
+                    <li>Projekty</li>
+                    <li>Współpraca i Kontakt</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="ad">
+            Tutaj reklama Airhaiku
+        </div>
+        <div>
+            <P>Posty:</P>
+            {% if posts %}
+            {% for post in posts %}
+            <div class="post">
+                <p>Opublikowany: {{ post.published_date }}</p>
+                <h2> <a href="">{{ post.title }}</a></h2>
+                <em>{{ post.text|linebreaksbr  }}</em>
+            </div>
+            {% endfor %}
+            {% else %}
+            <div>
+                <h1>You have not written any posts yet!</h1>
+            </div>
+            {% endif %}
+
+        </div>
+        <div class="stopka">
+
+        </div>
+
+    </body>
+    </html>
