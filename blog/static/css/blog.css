@@ -5,9 +5,84 @@ body {
     padding-left : 15px;
     font-family: 'Lato', sans-serif;
 }
-
+.navbar-brand{
+    padding-left : 15px;
+}
 .main_tab{
     background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+}
+.sociallinks
+{
+	background:#222222;
+	text-align: center;
+	padding: 0;
+}
+.site-footer
+{
+	background:#111111;
+	color:#999999;
+	padding: 20px 0;
+}
+.li
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+
+}
+.li a
+{
+	color:#ffffff;
+	display: block;
+}
+.li:hover
+{
+	background:#0077B5;
+}
+.yt
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.yt a
+{
+	color:#ffffff;
+	display: block;
+}
+.yt:hover
+{
+	background-color:#d94348
+}
+.gplus
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.gplus a
+{
+	color:#ffffff;
+	display: block;
+}
+.gplus:hover
+{
+	background-color:#d95333
+}
+.gh
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.gh a
+{
+	color:#ffffff;
+	display: block;
+}
+.gh:hover
+{
+	background-color:#000000;
 }
