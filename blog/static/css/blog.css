@@ -1,88 +1,21 @@
-h1 a,h2 a{
-    color: #4691d2;
-}
-body {
-    padding-left : 15px;
+body{
     font-family: 'Lato', sans-serif;
+    padding-top: 56px;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.collapse li:hover
+{
+	background: black;
+	color: #CC00CC;
+	border-bottom:1px solid #33CCCC;
 }
 .navbar-brand{
     padding-left : 15px;
 }
-.main_tab{
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+.mb-4{
+    border-bottom:2px solid #33CCCC;
 }
-.sociallinks
-{
-	background:#222222;
-	text-align: center;
-	padding: 0;
-}
-.site-footer
-{
-	background:#111111;
-	color:#999999;
-	padding: 20px 0;
-}
-.li
-{
-	width: 25%;
-	height: 155px;
-	float: left;
-
-}
-.li a
-{
-	color:#ffffff;
-	display: block;
-}
-.li:hover
-{
-	background:#0077B5;
-}
-.yt
-{
-	width: 25%;
-	height: 155px;
-	float: left;
-}
-.yt a
-{
-	color:#ffffff;
-	display: block;
-}
-.yt:hover
-{
-	background-color:#d94348
-}
-.gplus
-{
-	width: 25%;
-	height: 155px;
-	float: left;
-}
-.gplus a
-{
-	color:#ffffff;
-	display: block;
-}
-.gplus:hover
-{
-	background-color:#d95333
-}
-.gh
-{
-	width: 25%;
-	height: 155px;
-	float: left;
-}
-.gh a
-{
-	color:#ffffff;
-	display: block;
-}
-.gh:hover
-{
-	background-color:#000000;
+.text-center{
+    background: rgba(0, 0, 0, 0.2);
 }

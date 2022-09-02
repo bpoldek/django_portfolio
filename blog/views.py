@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from .forms import PostForm
 from django.views.generic import DetailView
 from django.views.generic import TemplateView
+
 class Image(TemplateView):
     form = PostForm
     tempfile = 'blog/image.html'
@@ -28,6 +29,8 @@ class ImageDisplay(DetailView):
 
 # Create your views here.
 
+def main(request):
+    return render(request, 'blog/main.html')
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
